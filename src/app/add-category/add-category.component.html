@@ -1,0 +1,10 @@
+<form [formGroup]="checkoutForm" (ngSubmit)="onSubmit()">
+
+  <div class="form-floating mb-3">
+    <input type="text" class="form-control" id="categoryName" placeholder="category" formControlName="categoryName">
+    <label for="categoryName" class="form-label">Category Name</label>
+  </div>
+
+  <button class="btn btn-dark" type="submit">Add</button>
+
+</form>
