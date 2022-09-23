@@ -27,10 +27,13 @@ export class ProductDetailsComponent implements OnInit {
   }
 
   deleteProduct(id: number){
-    this.productService.delete(id)
-    this.router.navigate(['products'], { skipLocationChange: true }).then(() => {
-      this.router.navigate(['Your actualComponent']);
-  });
+     this.productService.delete(id).subscribe(res => {
+      this.router.navigate(['products'])
+     })
+
+  //   this.router.navigate(['products'], { skipLocationChange: true }).then(() => {
+  //     this.router.navigate(['Your actualComponent']);
+  // });
   }
 
 }

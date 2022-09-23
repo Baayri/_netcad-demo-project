@@ -34,9 +34,7 @@ export class ProductService {
   }
 
   delete(id: number){
-    this.http.delete("http://localhost:8080/api/products/delete?id="+id).subscribe((result) => {
-      console.log(JSON.stringify(result))
-    })
+    return this.http.delete("http://localhost:8080/api/products/delete?id="+id)
   }
 }
 

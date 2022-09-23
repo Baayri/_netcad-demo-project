@@ -3,6 +3,7 @@ import { RouterModule, Routes } from '@angular/router';
 import { AddCategoryComponent } from './add-category/add-category.component';
 import { AddProductComponent } from './add-product/add-product.component';
 import { CategoriesComponent } from './categories/categories.component';
+import { CategoryDashboardComponent } from './category-dashboard/category-dashboard.component';
 import { ProductDashboardComponent } from './product-dashboard/product-dashboard.component';
 import { ProductDetailsComponent } from './product-details/product-details.component';
 import { ProductsByCategoryComponent } from './products-by-category/products-by-category.component';
@@ -14,7 +15,7 @@ const routes: Routes = [
   {path: "productDashboard", component: ProductDashboardComponent},
   {path: "categories", component: CategoriesComponent},
   {path: "categories/:categoryId", component: ProductsByCategoryComponent},
-  {path: "addCategory", component: AddCategoryComponent},
+  {path: "categoryDashboard", component: CategoryDashboardComponent},
 ];
 
 @NgModule({

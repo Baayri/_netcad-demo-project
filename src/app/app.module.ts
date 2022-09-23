@@ -15,6 +15,8 @@ import { ProductDetailsComponent } from './product-details/product-details.compo
 import { ProductsByCategoryComponent } from './products-by-category/products-by-category.component';
 import { UpdateProductComponent } from './update-product/update-product.component';
 import { ProductDashboardComponent } from './product-dashboard/product-dashboard.component';
+import { UpdateCategoryComponent } from './update-category/update-category.component';
+import { CategoryDashboardComponent } from './category-dashboard/category-dashboard.component';
 
 @NgModule({
   declarations: [
@@ -27,7 +29,9 @@ import { ProductDashboardComponent } from './product-dashboard/product-dashboard
     ProductDetailsComponent,
     ProductsByCategoryComponent,
     UpdateProductComponent,
-    ProductDashboardComponent
+    ProductDashboardComponent,
+    UpdateCategoryComponent,
+    CategoryDashboardComponent
   ],
   imports: [
     BrowserModule,
